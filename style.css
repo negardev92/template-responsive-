@@ -1,0 +1,792 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  direction: rtl;
+  font-family: Tahoma;
+  color: rgba(9, 90, 50, 0.756);
+
+}
+
+.main {
+  position: relative;
+}
+
+.Logo {
+  margin: 10px;
+}
+
+.icon {
+  display: none;
+}
+
+.Information {
+  display: flex;
+}
+
+.Titel_Information ul {
+  position: absolute;
+  display: flex;
+  gap: 2px;
+  left: 20px;
+  top: 10px;
+  margin-right: 150px;
+  list-style-type: none;
+
+}
+
+.Titel_Information li {
+  display: flex;
+  padding-right: 15px;
+  margin: 2px;
+  border-right: 1px solid;
+}
+
+.Titel_Information li i {
+  margin-left: 5px;
+  font-size: medium;
+}
+
+.Navbar {
+  display: flex;
+  display: block;
+  background-color: rgb(4, 212, 153);
+  top: 0;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  z-index: 2;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+}
+
+.Navbar a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.Navbar ul ul {
+  display: none;
+  z-index: 2;
+}
+
+.Navbar ul li:hover>ul {
+  display: block;
+
+}
+
+.Navbar ul {
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+.Navbar ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.Navbar ul li {
+  float: right;
+  position: relative;
+  margin: 0px;
+}
+
+.Navbar ul li:hover a {
+  color: rgb(255, 255, 255);
+  top: 5px;
+}
+
+.Navbar ul li a {
+  display: block;
+  text-decoration: none;
+  border-radius: 2px;
+  color: rgb(23, 79, 5);
+  padding: 5px;
+}
+
+.Navbar ul ul {
+  position: absolute;
+  margin: 0px;
+}
+
+.Navbar ul ul li {
+  float: none;
+  position: relative;
+  margin: 0px;
+}
+
+.Navbar ul ul li a {
+  padding: 10px 30px;
+  margin: 0px;
+  color: ffff;
+  background-color: #026a3a;
+
+}
+
+.Navbar ul ul li a:hover {
+  color: #026a3a;
+  background-color: #fff;
+  border: 1px solid rgb(23, 79, 5);
+}
+
+.Dtate_phone {
+  display: none;
+}
+
+.Dtate {
+  display: flex;
+  height: auto;
+  direction: rtl;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+
+.calender,
+.submit {
+  border: none;
+  border-right: 1px solid rgb(23, 79, 5);
+  background-color: #fff;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.Dtate p {
+  font-size: 10px;
+  top: 15px;
+}
+
+.Servises {
+  display: flex;
+  position: relative;
+  top: 15px;
+  width: 100%;
+  height: 450px;
+  background-color: aquamarine;
+  z-index: 1;
+}
+
+.Titel_About h1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-shadow: 2px 2px #fff;
+}
+
+.Titel_About p {
+  position: absolute;
+  top: 70px;
+  right: 35px;
+  font-weight: normal;
+  line-height: 32.8px;
+}
+
+.Btn_all {
+  position: absolute;
+  top: 200px;
+  right: 25px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 15px;
+  background-color: rgb(23, 79, 5);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Btn_all:hover {
+  background-color: #fff;
+  color: rgb(23, 79, 5);
+  transition: 5s;
+}
+
+h4 {
+  position: absolute;
+  top: 210px;
+  right: 210px;
+}
+
+h4 i {
+  position: absolute;
+  top: 5px;
+  right: 130px;
+
+}
+
+.winner_Logo {
+  position: absolute;
+  top: 300px;
+  right: 45px;
+  display: flex;
+  opacity: 0.1;
+}
+
+.winner_Logo:hover {
+  opacity: 0.9;
+}
+
+.brnd_child {
+  width: 350px;
+  height: 450px;
+  position: absolute;
+  right: 800px;
+}
+
+.About {
+  position: relative;
+  width: 100%;
+  height: 470px;
+}
+
+.About_part1 {
+  position: absolute;
+  right: 15px;
+  top: 45px;
+  width: 300px;
+  height: 90px;
+  border: 2px solid rgb(195, 213, 201);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 10px 10px #c2cdc81c;
+}
+
+.About h1 {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  padding: 20px;
+  background-color: rgb(44, 247, 179);
+  border-radius: 0px 10px 10px 10px;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+.About p {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+}
+
+.Img_About1 {
+  border-radius: 0px 0px 80px 0px;
+  box-shadow: 10px 10px #c2cdc81c;
+  width: 300px;
+  height: 280px;
+  position: absolute;
+  right: 15px;
+  top: 160px;
+}
+
+.Img_About2 {
+  width: 280px;
+  height: 400px;
+  position: absolute;
+  right: 340px;
+  top: 40px;
+}
+
+.About_part2 {
+  position: absolute;
+  right: 580px;
+  top: 40px;
+  width: 700px;
+  height: 300px;
+}
+
+.About_part2 p {
+  position: absolute;
+  right: 60px;
+}
+
+.about-titr {
+  position: absolute;
+  top: 25px;
+  margin: 20px;
+  right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.about-parg {
+  position: absolute;
+  line-height: 32.8px;
+  ;
+  top: 110px;
+  right: 60px;
+}
+
+.About_ul {
+  height: 100px;
+  position: absolute;
+  right: 680px;
+  top: 250px;
+  width: 300px;
+}
+
+.About_ul li {
+  list-style: none;
+  font-size: small;
+  top: 5px;
+}
+
+.About_ul img {
+  margin: 2px;
+
+}
+
+.part1_ul {
+  position: absolute;
+  right: 2px;
+  top: 30px;
+  width: 250px;
+}
+
+.part2_ul {
+  position: absolute;
+  right: 290px;
+  top: 30px;
+  width: 300px;
+}
+
+.Btn_About {
+  position: absolute;
+  top: 150px;
+  right: 15px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 15px;
+  background-color: rgb(23, 79, 5);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Btn_About:hover {
+  background-color: #fff;
+  color: rgb(23, 79, 5);
+  border: 1px solid rgb(23, 79, 5);
+  transition: 5s;
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media screen and (max-width: 1280px) {
+
+  .Logo img {
+    width: 110px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .Titel_Information li p {
+    font-size: 12px;
+    padding: 1px;
+  }
+
+  .Titel_Information li i {
+    margin-left: 5px;
+    font-size: small;
+  }
+
+  .Navbar {
+    height: 40px;
+  }
+
+  .Navbar a {
+    font-size: 14px;
+    height: 20px;
+  }
+
+  .calender,
+  .submit {
+    padding: 0px;
+  }
+
+  .Dtate p {
+    font-size: 8px;
+    top: 1px;
+    padding: 9px;
+  }
+
+  .Navbar ul ul li a {
+    height: 45px;
+  }
+
+  .Titel_About p {
+    font-size: 12px;
+  }
+
+  .Servises {
+    height: 350px;
+  }
+
+  .Titel_About h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .Btn_all {
+    padding: 10px;
+  }
+
+  .brnd_child {
+    right: 457px;
+    width: 285px;
+    height: 350px;
+  }
+
+  .winner_Logo {
+    top: 250px;
+    width: 100px;
+  }
+
+  .About_part1 {
+    width: 250px;
+    top: 35px;
+  }
+
+  .About h1 {
+    padding: 5px;
+  }
+
+  .About p {
+    top: 15px;
+    right: 50px
+  }
+
+  .Img_About1 {
+    width: 250px;
+    height: 280px;
+  }
+
+  .Img_About2 {
+    width: 200px;
+    right: 280px;
+  }
+
+  .About_part2 {
+    right: 450px;
+    width: 320px;
+  }
+
+  .about-titr {
+    font-size: 20px;
+  }
+
+  .about-parg {
+    line-height: 12.8px;
+    font-size: small;
+    right: 50px;
+    top: 120px;
+  }
+
+  .About_ul {
+    right: 490px;
+    top: 230px;
+  }
+
+  .part2_ul {
+    right: 2px;
+    top: 100px;
+  }
+
+  .Btn_About {
+    padding: 10px;
+    top: 180px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 768px) {
+
+  .Logo {
+    margin: 5px;
+  }
+
+  .Logo img {
+    width: 110px;
+  }
+
+  .Titel_Information ul {
+    left: 5px;
+  }
+
+  .Titel_Information li i {
+    margin-left: 5px;
+    font-size: x-small;
+  }
+
+  .Titel_Information li p {
+    font-size: 12px;
+    padding: 1px;
+  }
+
+  .Navbar a {
+    width: 100%;
+    font-size: 12px;
+    margin: 2px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .calender,
+  .submit {
+    padding: 0px;
+  }
+
+  .Dtate p {
+    font-size: 6px;
+    top: 1px;
+    padding: 9px;
+  }
+
+  .Servises {
+    height: 260px;
+  }
+
+  .Titel_About h1 {
+    font-size: 16px;
+  }
+
+  .Titel_About p {
+    line-height: 22.8px;
+  }
+
+  .Btn_all {
+    padding: 8px;
+    font-size: small;
+    top: 160px;
+  }
+
+  h4 {
+    position: absolute;
+    top: 165px;
+    right: 210px;
+    font-size: small;
+  }
+
+  .winner_Logo img {
+    width: 60px;
+
+  }
+
+  .winner_Logo {
+    top: 200px;
+  }
+
+  .brnd_child {
+    width: 170px;
+    height: 260px;
+    position: absolute;
+    right: 400px;
+  }
+
+  .Img_About2 {
+    width: 200px;
+    right: 350px
+  }
+
+  .About_part2 {
+    right: 20px;
+    width: 320px;
+    top: 450px;
+  }
+
+  .About_ul {
+    right: 320px;
+    top: 440px;
+  }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media screen and (max-width:563px) {
+
+  .Information {
+    display: none;
+  }
+
+  .Logo img {
+    width: 110px;
+  }
+
+  .Dtate_phone {
+    display: flex;
+    background-color: transparent;
+    width: 110px;
+    height: 30px;
+    direction: rtl;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+  }
+
+  .calender_phone,
+  .submit_phone {
+    border: none;
+    background-color: #fff;
+  }
+
+  .Dtate_phone p {
+    font-size: 10px;
+    top: 15px;
+  }
+
+  .icon {
+    display: flex;
+    background-color: transparent;
+    width: 20px;
+    direction: rtl;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+
+  #Navbar_id {
+    display: none;
+    z-index: 1px;
+  }
+
+  .Navbar_id:hove {
+    display: block;
+  }
+
+  .Navbar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Navbar ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .Navbar ul ul li {
+    float: right;
+    margin: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .Navbar ul ul li a {
+    top: 10px;
+    padding: 2px;
+    margin-right: 20px;
+    font-size: 12px;
+    top: 2px;
+    margin-right: 75px;
+    left: -120px;
+    background-color: transparent;
+    border: none;
+  }
+
+
+  .Dtate {
+    display: none;
+  }
+
+  .Servises {
+    top: 1px;
+  }
+
+  .Titel_About h1 {
+    font-size: 15px;
+  }
+
+  .Titel_About p {
+    font-weight: normal;
+    line-height: 12.8px;
+    right: 15px;
+    width: 250px;
+  }
+
+  .Btn_all {
+    top: 145px;
+  }
+
+  h4 {
+    top: 145px;
+    right: 170px;
+  }
+
+  h4 i {
+    position: absolute;
+    top: 2px;
+    right: 90px;
+
+  }
+
+  .brnd_child {
+    position: absolute;
+    top: 260px;
+    width: 250px;
+    right: 50px;
+    height: 350px;
+  }
+
+  .About_part1 {
+    width: 250px;
+    top: 380px;
+
+  }
+
+  .About {
+    height: 1611px;
+  }
+
+  .Img_About1 {
+    top: 480px;
+    right: 50px;
+  }
+
+  .Img_About2 {
+    width: 250px;
+    right: 50px;
+    top: 770px;
+  }
+
+  .About_part1 {
+    right: 50px;
+    top: 370px;
+  }
+
+  .About_part2 {
+    top: 1158px;
+    right: 30px;
+    width: 250px;
+  }
+
+  .about-parg {
+    right: 30px;
+    width: 250px;
+    line-height: 17.8px;
+
+  }
+
+  .about-titr {
+    right: 10px;
+  }
+
+  .About_ul {
+    right: 50px;
+    top: 1380px;
+  }
+  .Btn_About{
+    margin-top: 5px;
+  }
+}
